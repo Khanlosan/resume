@@ -4,42 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/02_select.css">
     <title>Resume</title>
 </head>
 <body>
-    <img src="bruce.jpeg" alt="Ханлосан Мухамед" width="200">
-    <h1>Ханлосан Мухамед</h1>
-    <p>Я начал осваивать програмирование на онлайн курсах<strong> Result school</strong></p>
-    <p>Мне по душе эта тема большое спасибо <em>Владилену Минину</em> за вклад и развитие для начинающих специалистов</p>
+   
+    <div class="container">
+    <div class="info">
+        <img src="bruce.jpeg" alt="Ханлосан Мухамед" width="200" class="avatar">
+        <div class="info-text">
+            <h1>Ханлосан Мухамед</h1>
+            <p>Я начал осваивать програмирование на онлайн курсах<strong> Result school</strong></p>
+            <p>Мне по душе эта тема большое спасибо <em>Владилену Минину</em> за вклад и развитие для начинающих специалистов</p>
 
-    <h4>Список социальных сетей</h4>
-    <a href="https://instagram.com" target="_blank">Instagram </a>
-    <br>
-    <a href="https://web.telegram.org" target="_blank">Telegram </a>
-    <br>
-    <a href="https://m.youtube.com" target="_blank">YouTube </a>
+            <h4>Список социальных сетей</h4>
+            <a  href="https://instagram.com" target="_blank">Instagram </a>
+        
+            <a href="https://web.telegram.org" target="_blank">Telegram </a>
+        
+            <a href="https://m.youtube.com" target="_blank">YouTube </a>
+        </div>
+    </div>
+   <div class="card bg-green">
+    <table class="table">
+        <h2>Опыт работы</h2>
+       <!-- <tr>
+            <th>синий</th>
+            <th>красный</th>
+            <th>зеленый</th>
+        </tr>-->
+        </tr>
+        <tr>
+            <td>Саморазвитие</td>
+            <td>Усидчивость</td>
+            <td>Желание</td>
+        </tr>
+        <tr>
+            <td>Время</td>
+            <td>Настрой</td>
+            <td>Возможность</td>
+        </tr>
+        <tr>
+            <td>Итог</td>
+            <td>Цель</td>
+            <td>Результат</td>
+        </tr>
+    </table>
+    </div>
+    <div class="card bg-red">
     <h2>Моё хобби</h2>
-    <ol>
+    <ol class="link-list">
         <li>Спорт</li>
         <li>Путешествие</li>
         <li>Плавание</li>
     </ol>
-    <form action="/">
-        <div>
-            <label for="name"Muhamed>Ваше имя</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    </div> 
+    
+    
+    <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="name"Muhamed>Ваше имя:</label>
+            <input  type="text" id="name" placeholder="Введите имя">
         </div>
-        <div>
-            <label for="email"Ваш email>Ваш email</label>
+        <div class="form-group">
+            <label for="email"Ваш email>Ваш email:</label>
             <input type="text" id="email" placeholder="Введите email">
         </div>
-        <div>
+    </div>
+        <div class="form-group">
             <label for="message"Ваше cообщение:>Ваше сообщение</label>
-            <br>
-            <textarea  name="" id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение...">
+            </textarea>
         </div>
+            <input type="submit" value="Отправить">
+        
     </form>
-    
-    
+
+</div>  
 </body>
 </html>
